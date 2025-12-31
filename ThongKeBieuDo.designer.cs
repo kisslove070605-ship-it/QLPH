@@ -28,12 +28,6 @@ namespace QuanLyPhongHoc
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartSuDungPhong = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartThietBi = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,30 +41,19 @@ namespace QuanLyPhongHoc
             // 
             // chartSuDungPhong
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartSuDungPhong.ChartAreas.Add(chartArea1);
             this.chartSuDungPhong.Location = new System.Drawing.Point(20, 40);
             this.chartSuDungPhong.Name = "chartSuDungPhong";
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            this.chartSuDungPhong.Series.Add(series1);
             this.chartSuDungPhong.Size = new System.Drawing.Size(300, 300);
             this.chartSuDungPhong.TabIndex = 0;
-            this.chartSuDungPhong.Text = "chart1";
+            this.chartSuDungPhong.Text = "Biểu đồ 1";
             // 
             // chartThietBi
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartThietBi.ChartAreas.Add(chartArea2);
             this.chartThietBi.Location = new System.Drawing.Point(340, 40);
             this.chartThietBi.Name = "chartThietBi";
-            series2.ChartArea = "ChartArea1";
-            series2.Name = "Series1";
-            this.chartThietBi.Series.Add(series2);
             this.chartThietBi.Size = new System.Drawing.Size(300, 300);
             this.chartThietBi.TabIndex = 1;
-            this.chartThietBi.Text = "chart2";
+            this.chartThietBi.Text = "Biểu đồ 2";
             // 
             // label1
             // 
@@ -94,17 +77,11 @@ namespace QuanLyPhongHoc
             // 
             // chartGioHoc
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartGioHoc.ChartAreas.Add(chartArea3);
             this.chartGioHoc.Location = new System.Drawing.Point(660, 40);
             this.chartGioHoc.Name = "chartGioHoc";
-            series3.ChartArea = "ChartArea1";
-            series3.Name = "Series1";
-            series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            this.chartGioHoc.Series.Add(series3);
             this.chartGioHoc.Size = new System.Drawing.Size(300, 300);
             this.chartGioHoc.TabIndex = 4;
-            this.chartGioHoc.Text = "chart3";
+            this.chartGioHoc.Text = "Biểu đồ 3";
             // 
             // label3
             // 
