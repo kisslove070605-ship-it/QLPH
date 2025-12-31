@@ -1,0 +1,53 @@
+// class BaoTriDinhKi.cs
+
+using System;
+
+namespace QuanLyBaoTriSuCo.Models
+{
+    public class BaoTriDinhKy
+    {
+        public string Phong { get; set; } = string.Empty;
+        public string HangMuc { get; set; } = string.Empty;
+        public string TanSuat { get; set; } = "3 tháng";
+        public DateTime LanGanNhat { get; set; }
+        public DateTime LanTiepTheo { get; set; }
+        public string DonViThucHien { get; set; } = string.Empty;
+        public string NguoiTheoDoi { get; set; } = string.Empty;
+        public string GhiChu { get; set; } = string.Empty;
+    }
+}
+
+// class Suco.cs
+
+using System;
+
+namespace QuanLyBaoTriSuCo.Models
+{
+    public class SuCo
+    {
+        public int MaSuCo { get; set; }
+        public string HoTen { get; set; } = string.Empty;
+        public string DonVi { get; set; } = string.Empty;
+        public string SoDienThoai { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Phong { get; set; } = string.Empty;
+        public string ThietBi { get; set; } = string.Empty;
+        public string MoTa { get; set; } = string.Empty;
+        public DateTime ThoiGianPhatHien { get; set; }
+        public string MucDo { get; set; } = "Trung bình"; // "Thấp", "Trung bình", "Cao"
+    }
+}
+
+//class Dulieu.cs
+
+using QuanLyBaoTriSuCo.Models;
+using System.Collections.Generic;
+
+namespace QuanLyBaoTriSuCo
+{
+    public static class DuLieu
+    {
+        public static List<SuCo> DanhSachSuCo = new List<SuCo>();
+        public static List<BaoTriDinhKy> DanhSachBaoTri = new List<BaoTriDinhKy>();
+    }
+}
